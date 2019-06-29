@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo|Lobster&display=swap");
+.hero {
+    z-index: 30;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    object-fit: cover;
+}
+
+h2 {
+    text-align: center;
+    margin: 4rem;
+    font-size: 3rem;
+}
+
+h3 {
+    margin-bottom: 2.5rem;
+}
+
+#selectionPage {
+    height: 100vh;
+    background: url(food.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.hero h1 {
+    z-index: 15;
+    margin: 0;
+    text-align: center;
+    font-family: "Lobster", cursive;
+    font-size: 6rem;
+    color: #f09878;
+    /* height: 100%; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* background-image: linear-gradient( rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.7) 100%); */
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#searchResults {
+    background: #f09878;
+    padding: 1rem 0;
+}
+
+.showTime {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.selection {
+    align-self: center;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+    z-index: 35;
+}
+
+.selections {
+    margin: 1rem;
+}
+
+body {
+    font-family: "Lobster", cursive;
+    font-family: "Arimo", sans-serif;
+}
+
+.react-autosuggest__container {
+    position: relative;
+}
+
+.react-autosuggest__input {
+    max-width: 240px;
+    height: 100%;
+    padding: 10px 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+select {
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none;
+    /* get rid of default appearance for IE8, 9 and 10*/
+    width: 100%;
+    height: 51px;
+    padding: 10px 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+form {
+    display: flex;
+    /* flex-wrap:wrap; */
+}
+
+.row {
+    text-align: center;
+}
+
+.description {
+    margin-top: 2.5rem;
+}
+
+.react-autosuggest__input--focused {
+    outline: none;
+}
+
+.react-autosuggest__input--open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+    display: none;
+    width: 100%;
+}
+
+.react-autosuggest__suggestions-container--open {
+    display: block;
+    position: absolute;
+    top: 51px;
+    width: 100%;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 2;
+    overflow: scroll;
+    max-height: 30vh;
+}
+
+.react-autosuggest__suggestions-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.react-autosuggest__suggestion--highlighted {
+    background-color: #ddd;
+}
+
+.react-autosuggest__section-container {
+    border-top: 1px dashed #ccc;
+}
+
+.react-autosuggest__section-container--first {
+    border-top: 0;
+}
+
+.react-autosuggest__section-title {
+    padding: 10px 0 0 10px;
+    font-size: 12px;
+    color: #777;
+}
+
+input[type="submit"] {
+    width: 100px;
+    height: 51px;
+    padding: 10px 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    margin: 0 1rem;
+}
+
+img {
+    width: 200px;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.restaurant {
+    display: flex;
+    padding: 1rem;
+    border-radius: 20px;
+    background: lightgray;
+}
+
+.information {
+    width: 50%;
+    padding: 0 1rem;
+}
+
+.select {
+    /* padding: 0; */
+    margin-top: 1rem;
+    display: flex;
+}
+
+.searchPage {
+    background: #f0d478;
+}
+
+#filterSelection {
+    margin-bottom: 0;
+}
+
+.svg-inline--fa.fa-w-16 {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    align-items: center;
+    align-self: center;
+}
+
+#video {
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    min-width: 100%;
+    position: relative;
+}
+
+#videocontainer {
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+}
+
+.icons {
+    font-size: 1rem;
+}
+
+.vl {
+    border-left: 1px solid #ccc;
+    height: 200px;
+}
+
+.col-sm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-sm h2 {
+    margin-bottom: 2rem;
+}
+
+.col-sm h3:last-child {
+    margin-top: 2rem;
+}
+
+.container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .information {
+        width: calc(100% - 200px);
+    }
+    .restaurant {
+        flex-wrap: wrap;
+    }
+    .mapImage {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .hero h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    form {
+        flex-wrap: wrap;
+    }
+    select {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    input[type="submit"] {
+        margin: 0;
+        min-width: 100%;
+    }
+    .react-autosuggest__container {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .react-autosuggest__input {
+        min-width: 100%;
+        padding: 16px 20px;
+    }
+    img {
+        width: 100%;
+    }
+    .information {
+        width: 100%;
+        padding: 1rem 0;
+    }
+}
