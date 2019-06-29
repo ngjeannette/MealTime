@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "12db5b5a63d7d38ecc4aa984df97843b",
+    "revision": "7a982c495d55d20e1c721cbbc3c22398",
     "url": "/MealTime/index.html"
   },
   {
-    "revision": "f2e8b6bf3526a5684e44",
+    "revision": "9f78d76561c8a4118750",
     "url": "/MealTime/static/css/main.e1e42e4d.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MealTime/static/js/2.6acccac0.chunk.js"
   },
   {
-    "revision": "f2e8b6bf3526a5684e44",
-    "url": "/MealTime/static/js/main.a30a08e4.chunk.js"
+    "revision": "9f78d76561c8a4118750",
+    "url": "/MealTime/static/js/main.e6281b13.chunk.js"
   },
   {
     "revision": "6e079b543795b7b8cdce",
