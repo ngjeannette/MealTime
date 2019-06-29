@@ -1,5 +1,7 @@
 Find your next Meal! Based on the location, MealTime finds the current local time and suggests nearby restaurants for the appropriate meal time. Timezones are from IANA Time Zone Database.
 
+https://ngjeannette.github.io/MealTime/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

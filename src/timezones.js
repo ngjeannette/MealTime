@@ -606,4 +606,3 @@ const reduceddata = filereddata.reduce((acc, curr) => {
     }
     return acc;
 }, {});
-console.log(reduceddata);

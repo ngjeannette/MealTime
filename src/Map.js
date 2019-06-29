@@ -25,16 +25,12 @@ const Coordinate = ({ text }) => (
 
 class SimpleMap extends React.Component {
   static defaultProps = {
-    zoom: 10
+    zoom: 15
   };
   render() {
     return (
       <>
-        <div
-          // class="card-img-top  "
-          className="mapImage"
-          style={{ height: "200px", width: "100%" }}
-        >
+        <div className="mapImage" style={{ height: "200px", width: "100%" }}>
           <GoogleMapReact
             bootstrapURLKeys={{
               key: "AIzaSyBhxC0ajIe4Q3ZZHvPrycvvT0a4dGzl7hY"

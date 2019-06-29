@@ -25,8 +25,8 @@ export default class About extends React.Component {
           <div className="col-sm">
             <h3>
               Based on the location, MealTime finds the current local time and
-              suggests nearby restaurants for the appropriate meal time.
-              Timezones are from IANA Time Zone Database.
+              suggests nearby restaurants for the appropriate meal
+              time.Timezones are from IANA Time Zone Database.
             </h3>
             <FontAwesomeIcon
               icon={faChevronDown}

@@ -7,9 +7,6 @@ import ShowTime from "./ShowTime";
 import About from "./About";
 import video from "./Espresso-Lungo.mp4";
 
-// When suggestion is clicked, Autosuggest needs to populate the input
-// based on the clicked suggestion. Teach Autosuggest how to calculate the
-// input value for every given suggestion.
 const getSuggestionValue = suggestion => suggestion;
 
 const renderSuggestion = suggestion => (
@@ -604,7 +601,6 @@ export default class App extends React.Component {
                    timeStamp: ""
                  };
 
-                 // Teach Autosuggest how to calculate suggestions for any given input value.
                  getSuggestions = value => {
                    const inputValue = value.trim().toLowerCase();
                    const inputLength = inputValue.length;
@@ -644,29 +640,6 @@ export default class App extends React.Component {
                    this.searchPage = React.createRef();
                  }
 
-                 //   componentDidMount() {
-                 //     axios
-                 //       .get(`https://api.openweathermap.org/data/2.5/weather`, {
-                 //         params: {
-                 //           APPID: "0abf4bf351cec72355774d7f99ba0cc8",
-                 //           id: "524901"
-                 //         }
-                 //       })
-                 //       .then(res => {
-                 //         const persons = res.data;
-                 //         this.setState({ persons });
-                 //       });
-
-                 //     // var dateWithouthSecond = new Date();
-                 //     // console.log(
-                 //     //   dateWithouthSecond.toLocaleTimeString("en-US", {
-                 //     //     hour12: false
-                 //     //     // hour: "2-digit",
-                 //     //     // minute: "2-digit"
-                 //     //   })
-                 //     // );
-                 //   }
-
                  timeStamp = (continent, city) => {
                    let x = new Date().toLocaleString("en-US", {
                      timeZone: continent + "/" + city,
@@ -677,31 +650,22 @@ export default class App extends React.Component {
                      hour: "2-digit",
                      minute: "2-digit"
                    });
-                   // this.setState({ timeStamp: x });
                    return x;
-                   // console.log(x);
                  };
 
                  handleChange = event => {
                    this.setState({
                      citySearch: event.target.value
                    });
-                   console.log(event.target.value);
                  };
 
                  onChange = (event, { newValue }) => {
-                   console.log("newValue", newValue);
                    this.setState({
                      citySearch: newValue
                    });
                  };
 
                  handleChangeSelect = event => {
-                   console.log("hi");
-                   console.log(
-                     "event.target.value",
-                     event.target.value
-                   );
                    const value = event.target.value;
                    this.setState(state => ({
                      selectedContinent: value,
@@ -710,9 +674,7 @@ export default class App extends React.Component {
                  };
 
                  handleSubmit = e => {
-                   console.log("ayy");
                    e.preventDefault();
-                   console.log("ayy");
 
                    this.setState(
                      state => ({
@@ -720,7 +682,6 @@ export default class App extends React.Component {
                        continent: state.selectedContinent
                      }),
                      () => {
-                       console.log("api", this.state.city);
                        this.getSelectionfromApi(
                          this.state.city,
                          this.state.time
@@ -765,7 +726,6 @@ export default class App extends React.Component {
                        }
                      )
                      .then(res => {
-                       console.log(res);
                        let businesses = res.data.businesses;
                        this.setState(
                          { selection: businesses },
